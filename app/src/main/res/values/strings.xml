@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChannelAdapter</string>
+
+    <string name="btn_channelselectlistdialog">ChannelSelectListDialog</string>
+    <string name="btn_channelselectlistactivity">ChannelSelectListActivity</string>
+    <string name="btn_channelselectlistpop">ChannelSelectListPop</string>
+
+    <string name="channel_edit">Edit</string>
+
+    <string name="selected_channel">Selected</string>
+    <string name="selected_channel_hint">Long press to sort</string>
+    <string name="channel_save">Save</string>
+    <string name="channel_change">Edit</string>
+    <string name="un_selected_channel">Unselected</string>
+
+</resources>

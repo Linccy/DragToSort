@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/layout_tag"
+  android:layout_width="match_parent"
+  android:layout_height="40dp"
+  android:layout_margin="6dp"
+  android:background="@drawable/news_tag_btn_bg_selector"
+  android:orientation="horizontal"
+  android:paddingBottom="10dp"
+  android:paddingEnd="6dp"
+  android:paddingLeft="6dp"
+  android:paddingRight="6dp"
+  android:paddingStart="6dp"
+  android:paddingTop="10dp"
+  android:gravity="center"
+  android:tag="skin:news_tag_btn_bg_selector:background">
+
+  <ImageView
+    android:id="@+id/img_edit"
+    android:layout_width="16dp"
+    android:layout_height="16dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/news_item_add_selector"
+    android:tag="skin:news_item_add_selector:src"
+    android:visibility="visible"/>
+
+  <TextView
+    android:id="@+id/tag_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_toEndOf="@id/img_edit"
+    android:layout_toRightOf="@id/img_edit"
+    android:enabled="false"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:maxLines="1"
+    android:minEms="2"
+    android:tag="skin:moment_popup_item_text_color:textColor"/>
+
+</RelativeLayout>
