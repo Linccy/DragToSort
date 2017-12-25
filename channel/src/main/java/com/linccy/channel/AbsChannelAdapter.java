@@ -138,7 +138,7 @@ public abstract class AbsChannelAdapter<T extends ChannelSelectBean>
       @Override
       public void onClick(final View v) {
         int position = myHolder.getAdapterPosition();
-        if (isEditMode) {
+        if (isEditMode && myHolder.isCanMove()) {
           ViewParent parent = myHolder.getRootView().getParent();
           RecyclerView recyclerView = ((RecyclerView) parent);
           View targetView = recyclerView.getLayoutManager().findViewByPosition(mMyChannelItems.size() + COUNT_PRE_OTHER_HEADER);
@@ -178,7 +178,7 @@ public abstract class AbsChannelAdapter<T extends ChannelSelectBean>
     myHolder.getRootView().setOnLongClickListener(new View.OnLongClickListener() {
       @Override
       public boolean onLongClick(final View v) {
-        if (myHolder.isCanMove()) {
+        if (isEditMode && myHolder.isCanMove()) {
           mItemTouchHelper.startDrag(myHolder);
         }
         return true;

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, result.toString(), Toast.LENGTH_LONG).show();
             }
         };
-        ChannelSelectListDialog<ChannelEntity> dialog = new ChannelSelectListDialog<>(this, MockData.SELECT_LIST, MockData.AIL_LIST);
+        ChannelSelectListDialog<ChannelEntity> dialog = new ChannelSelectListDialog<>(this, new ArrayList<>(MockData.SELECT_LIST), new ArrayList<>(MockData.AIL_LIST));
         dialog.setOnSaveTagListener(onSaveTagListener);
         dialog.show();
     }
